@@ -14,18 +14,12 @@ namespace Algorithms
     {
 
 
-        private static int[] Swap(int[] arr, int i1 ,int i2)
+        private static void Swap(int[] arr, int i1 ,int i2)
         {
 
 
-            int temp = arr[i1];
-            
-
-            arr[i1] = arr[i2];
-            arr[i2] =temp ;
-
-
-            return arr;
+            (arr[i2], arr[i1]) = (arr[i1], arr[i2]);
+         
         
         
 
